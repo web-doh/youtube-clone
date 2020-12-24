@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+#screenshot
+/screenshot
+
 # env
 .env
 
