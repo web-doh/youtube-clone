@@ -1,0 +1,26 @@
+.item {
+  cursor: pointer;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.channelTitle,
+.publishedAt {
+  color: gray;
+}

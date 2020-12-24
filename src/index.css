@@ -1,0 +1,22 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0.25rem 0;
+}

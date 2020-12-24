@@ -1,0 +1,11 @@
+.list {
+  max-width: 1024px;
+  padding: 1.25rem;
+  margin: 0 auto;
+  background-color: rgb(250, 250, 250);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem 0.75rem;
+}
