@@ -11,7 +11,7 @@
 
 ### Method
 
-1. mount 된 후, axios 를 활용하여 데이터 받아와서 **state(videos)**에 추가
+1. mount 된 후, axios 를 활용하여 데이터 받아와서 **state(videos)** 에 추가
    - fetch보다 구형 브라우저에서도 작동
    - JSON으로 자동 변환!
    - Node.js에서 사용 가능
