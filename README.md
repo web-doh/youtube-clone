@@ -2,17 +2,17 @@
 
 ### 프로젝트 접근 방식
 
-- 한 가지씩 기능을 추가해 나가는 방식
+- 기능을 한 가지씩 추가해 나가는 방식으로 진행 
 
-  1. youtube API 받아와서 국내 most popular 비디오 25개의 title 보여주기
-     <img src="./screenshot/1.jpg" width="180px" title="step 1" alt="step_1"/>
+> 1. Youtube API를 이용하여, 국내에서 현재 가장 인기있는 비디오 25개의 title 보여주기
+     <img src="./screenshot/1.png" width="720px" title="step 1" alt="step_1" />
 
-  2. 비디오의 간략 정보 보여주기 (썸네일, 채널명, 등록일자 추가)
-     <img src="./screenshot/2.jpg" width="180px" title="step 1" alt="step_2"/>
+> 2. 비디오의 간략 정보 보여주기 (썸네일, 채널명, 등록일자 추가)
+     <img src="./screenshot/2.png" width="720px" title="step 2" alt="step_2" />
 
-  3. search 창 만들기
+> 3. search 창 만들기
 
-  4. 비디오 선택했을 때, 정보가 자세하게 보이도록 설정 (description 추가)
+> 4. 비디오 선택했을 때, 정보가 자세하게 보이도록 설정 (description 추가)
 
 ### Method
 
@@ -21,3 +21,6 @@
    - JSON으로 자동 변환!
    - Node.js에서 사용 가능
    - csrf 보호 기능 탑재
+   
+2. video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비디오 정보 보여주기
+   - 정렬 방식: grid 
