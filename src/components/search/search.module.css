@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-items: space-evenly;
+  position: sticky;
+  padding: 0.75rem 1.25rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 1.5rem;
+  margin-right: 0.25rem;
+}
+
+.title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: -1px;
+}
+
+.bar {
+  flex: 1 1 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  height: 1.8rem;
+  outline: none;
+  padding: 0 0.5rem;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 0.25rem 0 0 0.15rem;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.input:focus {
+  box-shadow: 0 0 2px 0 rgba(10, 71, 163, 0.5) inset;
+}
+
+.button {
+  width: 4rem;
+  height: 1.8rem;
+  background-color: rgb(230, 230, 230);
+  border: 1px solid rgb(200, 200, 200);
+  border-left: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  transition: all 200ms ease-in-out;
+}
+
+.buttonImg {
+  width: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.button:hover,
+.buttonImg:hover {
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(200, 200, 200);
+}
