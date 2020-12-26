@@ -31,3 +31,9 @@
 3. Ref를 활용하여 input DOM 엘리먼트를 저장하고, value 값을 검색 query로 전달하여 axios 통신 => **state(videos)** 변경
 
    - 검색 창은 리렌더링 될 때마다 null 값으로 초기화되어야 하므로, createRef 사용
+
+\+) 검색 기능 리팩토링 - Dependency Injection
+
+- 한 가지의 기능을 담당하는 클래스(Youtube)로 분리
+- 컴포넌트 외부에서 필요한 객체(youtube)를 생성한 후, 이를 props로 전달받아 사용  
+  => 유닛테스트 용이 / 재사용성, 가독성 향상 / 유지 보수 용이
