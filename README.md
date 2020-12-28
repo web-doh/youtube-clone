@@ -6,26 +6,32 @@
 
 > 1. Youtube API를 이용하여, 국내에서 현재 가장 인기있는 비디오 25개의 title 보여주기
 >
-> ---
 >
-> ## <img src="./screenshot/1.png" width="720px" title="step 1" alt="step_1" />
+> <img src="./screenshot/1.png" width="720px" title="step 1" alt="step_1" />
 >
 > 2. 비디오의 간략 정보 보여주기 (썸네일, 채널명, 등록일자 추가)
->    <img src="./screenshot/2.png" width="720px" title="step 2" alt="step_2" />
+>
+>
+> <img src="./screenshot/2.png" width="720px" title="step 2" alt="step_2" />
 >
 > ---
 >
 > 3. search 창 만들기
->    <img src="./screenshot/3.png" width="720px" title="step 3" alt="step_3" />
+>
+>
+> <img src="./screenshot/3.png" width="720px" title="step 3" alt="step_3" />
 >
 > ---
 >
 > 4. 비디오 선택했을 때, 정보가 자세하게 보이도록 설정 (description 추가)
+>
+>
 > <img src="./screenshot/4.png" width="720px" title="step 4" alt="step_4" />
 > 
-|전체 화면|반응형 화면|
-|---|---|
-|<img src="./screenshot/4-1.png" width="360px" title="step 4-1" alt="step_4-1" />|<img src="./screenshot/4-2.png" width="360px" title="step 4-2" alt="step_4-2" />|
+> |전체 화면|반응형 화면|
+> |---|---|
+> |<img src="./screenshot/4-1.png" width="360px" title="step 4-1" alt="step_4-1" />|<img src="./screenshot/4-2.png" width="360px" title="step 4-2" alt="step_4-2" />|
+>
 > ---
 
 ### Method
