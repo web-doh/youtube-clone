@@ -3,21 +3,35 @@
   width: 100%;
 }
 
-.thumbnail {
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list .thumbnail {
+  width: 180px;
+  margin-right: 0.5rem;
+}
+
+.grid .thumbnail {
   width: 100%;
 }
 
-.body {
-  display: flex;
-  flex-direction: column;
+.list .body {
+  width: calc(100% - 170px);
 }
 
 .title {
   font-size: 0.875rem;
   margin: 0.5rem 0;
-  overflow: hidden;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.list .title {
+  margin: 0;
+  max-width: 90%;
 }
 
 .channelTitle,

@@ -6,12 +6,20 @@ const VideoItem = ({
   video: {
     snippet: { thumbnails },
   },
+  video,
+  onVideoClick,
+  display,
 }) => {
+  const displayType = display === "grid" ? styles.grid : styles.list;
+
   const regex = /-/g;
   const date = snippet.publishedAt.split("T")[0].replace(regex, ". ");
 
   return (
-    <li className={styles.item}>
+    <li
+      className={`${styles.item} ${displayType}`}
+      onClick={() => onVideoClick(video)}
+    >
       <img
         className={styles.thumbnail}
         src={thumbnails.medium.url}

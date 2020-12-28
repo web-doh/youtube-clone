@@ -1,10 +1,19 @@
-.list {
+.videos {
+  width: 100%;
   padding: 1.25rem;
   margin: 0 auto;
-  background-color: rgb(250, 250, 250);
   display: grid;
-  grid-template-columns: repeat(auto-fill, 320px);
-  justify-content: center;
   align-items: center;
+}
+
+.grid {
+  grid-template-columns: repeat(auto-fill, 320px);
   gap: 2.5rem 0.75rem;
+  justify-content: center;
+}
+
+.list {
+  flex: 4;
+  grid-template-columns: repeat(1, minmax(320px, 100%));
+  gap: 0.5rem 0.5rem;
 }

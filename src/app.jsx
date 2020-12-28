@@ -1,23 +1,31 @@
-import "./app.css";
-import axios from "axios";
 import { useEffect, useState, useCallback } from "react";
 import VideoList from "./components/video_list/video_list";
 import Search from "./components/search/search";
+import styles from "./app.module.css";
+import VideoDetail from "./components/video_detail/video_detail";
 
 function App({ youtube }) {
   const [videos, setVideos] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   const onSearch = useCallback((query) => {
+    setIsLoading(true);
     youtube
       .searchResult(query) //
       .then((result) => {
+        setSelectedVideo(null);
         setVideos(result);
         setIsLoading(false);
       });
-  });
+  }, []);
+
+  const handleVideoClick = useCallback((target) => {
+    setSelectedVideo(target);
+  }, []);
 
   useEffect(() => {
+    setIsLoading(true);
     youtube
       .mostPopular() //
       .then((result) => {
@@ -29,11 +37,27 @@ function App({ youtube }) {
   return (
     <>
       <Search onSearch={onSearch} />
-      {isLoading ? (
-        <span className="spinner">Loading...</span>
-      ) : (
-        <VideoList videos={videos} />
-      )}
+      <section className={styles.content}>
+        {isLoading ? (
+          <span className={styles.loader}>Loading...</span>
+        ) : selectedVideo ? (
+          <>
+            <VideoDetail selected={selectedVideo} />
+            <VideoList
+              videos={videos}
+              selected={selectedVideo}
+              onVideoClick={handleVideoClick}
+              display="list"
+            />
+          </>
+        ) : (
+          <VideoList
+            videos={videos}
+            onVideoClick={handleVideoClick}
+            display="grid"
+          />
+        )}
+      </section>
     </>
   );
 }
