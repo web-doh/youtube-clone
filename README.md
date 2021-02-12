@@ -5,6 +5,8 @@
 - 기능을 한 가지씩 추가해 나가는 방식으로 진행한다.
 <br/>
 
+----
+<br/>
 ### 단계별 진행 방법    
 
 #### 1. Youtube API를 이용하여, 국내에서 현재 가장 인기있는 비디오 25개의 title 보여주기    
@@ -23,6 +25,7 @@
 
 <br/>
 <br/>
+
 #### 2. 비디오의 간략 정보 보여주기 (썸네일, 채널명, 등록일자 추가)    
 <br/>
 <img src="./screenshot/2.png" width="720px" title="step 2" alt="step_2" />    
@@ -33,6 +36,7 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 
 <br/>
 <br/>
+
 #### 3. search 창 만들기    
 <br/>
 <img src="./screenshot/3.png" width="720px" title="step 3" alt="step_3" />
@@ -53,6 +57,7 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 
 <br/>
 <br/>
+
 #### 4. 비디오 선택하면 상세 정보 보여주기
 <br/>
 <img src="./screenshot/4.png" width="720px" title="step 4" alt="step_4" />
