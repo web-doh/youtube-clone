@@ -63,7 +63,6 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 
 #### 4. 비디오 선택하면 상세 정보 보여주기
 <br/>
-<img src="./screenshot/4.png" width="720px" title="step 4" alt="step_4" />
 
 |전체 화면|반응형 화면|
 |---|---|
