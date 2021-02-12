@@ -13,7 +13,7 @@
 
 ##### Method    
 
-mount 된 후, Youtube API의 데이터는 axios를 활용하여 받아온 뒤, **state(videos)** 에 추가한다.    
+- mount 된 후, Youtube API의 데이터는 axios를 활용하여 받아온 뒤, **state(videos)** 에 추가한다.    
    
 >   < axios 사용 이유 > 
 >   - fetch보다 구형 브라우저에서도 작동
@@ -39,10 +39,10 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 
 ##### Method    
 
-Ref를 활용하여 input DOM 엘리먼트를 저장하고, value 값을 검색쿼리로 전달하여 axios 통신한다.     
+- Ref를 활용하여 input DOM 엘리먼트를 저장하고, value 값을 검색쿼리로 전달하여 axios 통신한다.     
    => **state(videos)** 변경한다.    
 
->   - 검색 창은 createRef를 사용해서 리렌더링될 때마다 null 값으로 초기화시킨다.
+- 검색 창은 createRef를 사용해서 리렌더링될 때마다 null 값으로 초기화시킨다.
 
 > \+) 데이터 통신 리팩토링 - Dependency Injection
 >
@@ -64,14 +64,14 @@ Ref를 활용하여 input DOM 엘리먼트를 저장하고, value 값을 검색�
 
 ##### Method   
 
-video_item에 onClick 이벤트를 설정하여, 클릭된 비디오가 state(selectedVideo)가 되도록 함수를 추가한다.
+- video_item에 onClick 이벤트를 설정하여, 클릭된 비디오가 state(selectedVideo)가 되도록 함수를 추가한다.
 
-> - video_list를 mapping할 때, 선택된 비디오는 제외하고 변환될 수 있도록 null 값을 return한다.
->
-> - props로 display 방식을 전달해줘서 상황에 맞게 정렬 방식을 변경한다.    
->  (선택된 비디오가 있는 경우: list 방식 / 없는 경우: grid 방식)
->
-> - 선택된 비디오가 있는 상태에서 검색하는 경우, state(selectedVideo)가 null이 되도록 재설정한다.
+- video_list를 mapping할 때, 선택된 비디오(selectedVideo)는 제외하고 변환될 수 있도록 null 값을 return한다.
+
+- props로 display 방식을 전달해줘서 상황에 맞게 정렬 방식을 변경한다.    
+  (선택된 비디오가 있는 경우: list 방식 / 없는 경우: grid 방식)
+
+- 선택된 비디오가 있는 상태에서 검색하는 경우, state(selectedVideo)가 null이 되도록 재설정한다.
 
 <br/>
 <br/>
