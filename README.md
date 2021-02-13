@@ -6,24 +6,26 @@
 Youtube API를 활용하여 메인페이지에는 국내에서 현재 가장 인기있는 영상 25개를 보여주고, 검색 창을 통해 영상을 검색할 수 있는 웹 어플리케이션이다. 
 
 ![preview](./screenshot/preview.gif)
+<br/>
 
 ## 2. 사용 스킬
 - ES2015+
 - React
 - Youtube API
+<br/>
 
 ## 3. Deployment
 - Github
+<br/>
 
 ## 4. 프로젝트 접근 방식   
 
 기능을 한 가지씩 추가해 나가는 방식으로 진행한다.
+<br/>
 
 ## 5. 단계별 진행 방법    
 
-### 1. Youtube API를 이용하여, 국내에서 현재 가장 인기있는 비디오 25개의 title 보여주기    
-
-#### Method    
+#### 1. Youtube API를 이용하여, 국내에서 현재 가장 인기있는 비디오 25개의 title 보여주기     
 
 - mount 된 후, Youtube API의 데이터는 axios를 활용하여 받아온 뒤, **state(videos)** 에 추가한다.    
    
@@ -34,16 +36,12 @@ Youtube API를 활용하여 메인페이지에는 국내에서 현재 가장 인
 >   - csrf 보호 기능 탑재
 <br/>
 
-### 2. 비디오의 간략 정보 보여주기 (썸네일, 채널명, 등록일자 추가)    
+#### 2. 비디오의 간략 정보 보여주기 (썸네일, 채널명, 등록일자 추가)    
 
-#### Method    
-
-video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비디오 정보를 보여준다.    
+- video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비디오 정보를 보여준다.    
 <br/>
 
-### 3. search 창 만들기    
-
-#### Method    
+#### 3. search 창 만들기    
 
 - Ref를 활용하여 input DOM 엘리먼트를 저장하고, value 값을 검색쿼리로 전달하여 axios 통신한다.     
    => **state(videos)** 변경한다.    
@@ -57,9 +55,7 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 >   => 장점 : 유닛테스트에 용이하다. / 재사용성, 가독성이 향상된다. / 유지보수에 용이하다.
 <br/>
 
-### 4. 비디오 선택하면 상세 정보 보여주기
-
-#### Method   
+#### 4. 비디오 선택하면 상세 정보 보여주기 
 
 - video_item에 onClick 이벤트를 설정하여, 클릭된 비디오가 state(selectedVideo)가 되도록 함수를 추가한다.
 
