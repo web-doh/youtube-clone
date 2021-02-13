@@ -1,20 +1,29 @@
+![cover](./screenshot/logo.png)
+
 # YouTube Clone Coding
 
-### 프로젝트 접근 방식   
+## 1. Introduction
+Youtube API를 활용하여 국내에서 현재 가장 인기있는 TOP 25 영상 목록을 보여주고, 검색 창을 통해 영상을 검색할 수 있는 웹 어플리케이션이다. 
 
-- 기능을 한 가지씩 추가해 나가는 방식으로 진행한다.
-<br/>
+## 2. 사용 스킬
+- ES2015+
+- React
+- Youtube API
 
-----
-<br/>
+## 3. Deployment
+- Github
 
-### 단계별 진행 방법    
+## 4. 프로젝트 접근 방식   
 
-#### 1. Youtube API를 이용하여, 국내에서 현재 가장 인기있는 비디오 25개의 title 보여주기    
+기능을 한 가지씩 추가해 나가는 방식으로 진행한다.
+
+## 5. 단계별 진행 방법    
+
+### 1. Youtube API를 이용하여, 국내에서 현재 가장 인기있는 비디오 25개의 title 보여주기    
 <br/>
 <img src="./screenshot/1.png" width="720px" title="step 1" alt="step_1" />    
 
-##### Method    
+#### Method    
 
 - mount 된 후, Youtube API의 데이터는 axios를 활용하여 받아온 뒤, **state(videos)** 에 추가한다.    
    
@@ -28,11 +37,11 @@
 ----
 <br/>
 
-#### 2. 비디오의 간략 정보 보여주기 (썸네일, 채널명, 등록일자 추가)    
+### 2. 비디오의 간략 정보 보여주기 (썸네일, 채널명, 등록일자 추가)    
 <br/>
 <img src="./screenshot/2.png" width="720px" title="step 2" alt="step_2" />    
 
-##### Method    
+#### Method    
 
 video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비디오 정보를 보여준다.    
 <br/>
@@ -40,11 +49,11 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 ----
 <br/>
 
-#### 3. search 창 만들기    
+### 3. search 창 만들기    
 <br/>
 <img src="./screenshot/3.png" width="720px" title="step 3" alt="step_3" />
 
-##### Method    
+#### Method    
 
 - Ref를 활용하여 input DOM 엘리먼트를 저장하고, value 값을 검색쿼리로 전달하여 axios 통신한다.     
    => **state(videos)** 변경한다.    
@@ -61,7 +70,7 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 ----
 <br/>
 
-#### 4. 비디오 선택하면 상세 정보 보여주기
+### 4. 비디오 선택하면 상세 정보 보여주기
 <br/>
 
 |전체 화면|반응형 화면|
@@ -69,7 +78,7 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 |<img src="./screenshot/4-1.png" width="360px" title="step 4-1" alt="step_4-1" />|<img src="./screenshot/4-2.png" width="360px" title="step 4-2" alt="step_4-2" />|
 <br/>
 
-##### Method   
+#### Method   
 
 - video_item에 onClick 이벤트를 설정하여, 클릭된 비디오가 state(selectedVideo)가 되도록 함수를 추가한다.
 
