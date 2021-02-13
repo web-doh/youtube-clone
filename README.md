@@ -18,7 +18,7 @@ Youtube API를 활용하여 메인페이지에는 국내에서 현재 가장 인
 
 ## 3. Deployment
 
-Github
+Github : https://web-doh.github.io/youtube-clone/
 <br/>
 
 ## 4. 프로젝트 접근 방식   
