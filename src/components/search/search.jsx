@@ -14,7 +14,11 @@ const Search = ({ onSearch }) => {
   return (
     <header className={styles.header}>
       <a href={window.location.origin} className={styles.container}>
-        <img className={styles.logo} src="/images/logo.png" alt="site logo" />
+        <img
+          className={styles.logo}
+          src={process.env.PUBLIC_URL + "/images/logo.png"}
+          alt="site logo"
+        />
         <h1 className={styles.title}>YouTube</h1>
       </a>
 
@@ -27,7 +31,7 @@ const Search = ({ onSearch }) => {
         />
         <button type="submit" className={styles.button} onClick={handleSearch}>
           <img
-            src="/images/search.png"
+            src={process.env.PUBLIC_URL + "/images/search.png"}
             alt="search button"
             className={styles.buttonImg}
           />
