@@ -3,25 +3,29 @@
 # YouTube Clone Coding
 
 ## 1. Introduction
+
 Youtube API를 활용하여 메인페이지에는 국내에서 현재 가장 인기있는 영상 25개를 보여주고, 검색 창을 통해 영상을 검색할 수 있는 웹 어플리케이션이다. 
 
 ![preview](./screenshot/preview.gif)
 <br/>
 
 ## 2. 사용 스킬
+
 - ES2015+
 - React
 - Youtube API
 <br/>
 
 ## 3. Deployment
-- Github
+
+Github
 <br/>
 
 ## 4. 프로젝트 접근 방식   
 
 기능을 한 가지씩 추가해 나가는 방식으로 진행한다.
 <br/>
+
 
 ## 5. 단계별 진행 방법    
 
