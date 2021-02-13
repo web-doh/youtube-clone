@@ -75,7 +75,7 @@ video_list에 state(video)를 props로 전달해주고, 이를 활용하여 비�
 
 |전체 화면|반응형 화면|
 |---|---|
-|<img src="./screenshot/4-1.png" width="360px" title="step 4-1" alt="step_4-1" />|<img src="./screenshot/4-2.png" width="360px" title="step 4-2" alt="step_4-2" />|
+|<img src="./screenshot/4-1.png" height="360px" title="step 4-1" alt="step_4-1" />|<img src="./screenshot/4-2.png" height="360px" title="step 4-2" alt="step_4-2" />|
 <br/>
 
 #### Method   
