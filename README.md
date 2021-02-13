@@ -1,4 +1,4 @@
-![cover](./screenshot/cover.png)
+![cover](./screenshot/logo.png)
 
 # YouTube Clone Coding
 
