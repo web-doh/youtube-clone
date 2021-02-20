@@ -1,6 +1,7 @@
 .item {
   cursor: pointer;
   width: 100%;
+  transition: all 200ms ease-in-out;
 }
 
 .list {
@@ -15,6 +16,10 @@
 
 .grid .thumbnail {
   width: 100%;
+}
+
+.item:hover {
+  transform: scale(1.01);
 }
 
 .list .body {

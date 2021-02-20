@@ -13,7 +13,7 @@ const Search = ({ onSearch }) => {
 
   return (
     <header className={styles.header}>
-      <a href={window.location.origin} className={styles.container}>
+      <a href={process.env.PUBLIC_URL} className={styles.container}>
         <img
           className={styles.logo}
           src={process.env.PUBLIC_URL + "/images/logo.png"}
